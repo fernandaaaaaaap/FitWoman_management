@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="8dp"
+    android:layout_margin="4dp"
+    android:elevation="4dp">
+
+    <!-- Imagen de progreso -->
+    <ImageView
+        android:id="@+id/ivFotoProgreso"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:contentDescription="@String/desc_foto_progreso"/>
+
+    <!-- Información -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tvMesFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Octubre 2024"
+            android:textSize="14sp"
+            android:textColor="#8B4789"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPesoFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚖️ 65 kg"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvCategoriaFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📸 Frontal"
+            android:textSize="12sp"
+            android:textColor="#999999"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+</LinearLayout>

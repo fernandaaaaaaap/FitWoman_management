@@ -12,6 +12,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitWomanManagement">
         <activity
+            android:name=".ComparadorFotosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TomarFotoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.FitWomanManagement" />
+        <activity
+            android:name=".fotosProgreso"
+            android:exported="false" />
+        <activity
+            android:name=".editarEntrenamiento"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleEntrenamientoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".crearEntrenamientoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaEntrenamientoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuPrincipalActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

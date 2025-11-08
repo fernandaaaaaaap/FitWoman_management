@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8B4789"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_editar_entrenamiento"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitulo_editar_entrenamiento"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Formulario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Nombre -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nombre"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etNombreEditar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/hint_nombre"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="textCapWords"/>
+
+            <!-- Categoría -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_categoria"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinnerCategoriaEditar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Grupo Muscular -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_grupo_muscular"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etGrupoMuscularEditar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/hint_grupo_muscular"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="textCapWords"/>
+
+            <!-- Duración -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_duracion"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etDuracionEditar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/hint_duracion"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"/>
+
+            <!-- Descripción -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_descripcion"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etDescripcionEditar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/hint_descripcion"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="4"/>
+
+            <!-- Notas -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_notas"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etNotasEditar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/hint_notas"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="4"/>
+
+            <!-- Botones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCancelarEditar"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_cancelar"
+                    android:textColor="#666666"
+                    android:backgroundTint="#EEEEEE"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnGuardarCambios"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="@String/btn_guardar_cambios"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#8B4789"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8B4789"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_nueva_foto"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitulo_nueva_foto"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Preview de la foto -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/ivPreviewFoto"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:scaleType="centerCrop"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/desc_preview_foto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_sin_foto"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Botones para capturar foto -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnTomarFoto"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/btn_tomar_foto"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#8B4789"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/btnSeleccionarGaleria"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/btn_galeria"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#C2528B"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Formulario -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Mes -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_mes"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etMes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/hint_mes"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="text"/>
+
+            <!-- Peso -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_peso"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/etPeso"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_peso"
+                    android:background="#FFFFFF"
+                    android:padding="12dp"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="kg"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#666666"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"/>
+            </LinearLayout>
+
+            <!-- Categoría -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_categoria_foto"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spinnerCategoriaFoto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Notas -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_notas"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etNotasFoto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/hint_notas_foto"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="4"/>
+
+            <!-- Botones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCancelarFoto"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_cancelar"
+                    android:textColor="#666666"
+                    android:backgroundTint="#EEEEEE"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnGuardarFoto"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_guardar_foto"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#E91E63"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
