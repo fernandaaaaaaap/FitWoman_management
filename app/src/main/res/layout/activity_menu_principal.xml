@@ -35,7 +35,7 @@
 
     <!-- Botones del menú -->
     <Button
-        android:id="@+id/btnMisEntrenamientos"
+        android:id="@+id/btnMisentrenamientos"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="@string/btn_mis_entrenamientos"
@@ -47,7 +47,7 @@
         android:drawablePadding="8dp"/>
 
     <Button
-        android:id="@+id/btnFotosProgreso"
+        android:id="@+id/btnfotosProgreso"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="@string/btn_fotos_progreso"
@@ -59,7 +59,7 @@
         android:drawablePadding="8dp"/>
 
     <Button
-        android:id="@+id/btnEstadisticas"
+        android:id="@+id/btnestadisticas"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="@string/btn_estadisticas"
