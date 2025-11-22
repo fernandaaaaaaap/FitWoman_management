@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#FFFFFF"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/ivFotoProgreso"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:background="#EEEEEE"/>
+
+    <TextView
+        android:id="@+id/tvMesFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Month"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:textAlignment="center"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvPesoFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:textAlignment="center"/>
+
+</LinearLayout>
