@@ -43,7 +43,7 @@
             android:name=".DetalleEntrenamientoActivity"
             android:exported="false" /> <!-- Photo Activities -->
         <activity
-            android:name=".adapters.fotosProgreso"
+            android:name=".fotosProgreso"
             android:exported="false" />
         <activity
             android:name=".TomarFotoActivity"
@@ -56,8 +56,15 @@
             android:exported="false" />
 
         <activity
-            android:name=".EstadisticasActivity"
+            android:name=".Estadisticas_Activity"
             android:exported="false" />
+
+        <activity
+            android:name=".GoalsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".CreateGoalActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

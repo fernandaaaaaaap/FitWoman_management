@@ -4,7 +4,7 @@ import utn.ac.cr.fitwoman_management.Entities.Entrenamiento;
 import utn.ac.cr.fitwoman_management.Entities.FotoProgreso;
 import java.util.Date;
 import java.util.List;
-
+import utn.ac.cr.fitwoman_management.Entities.Goal;
 public interface IDataManager {
 
    //CRUD//
@@ -33,4 +33,14 @@ public interface IDataManager {
     void clearAllData();
     int getTotalEntrenamientos();
     int getTotalFotosProgreso();
+
+    // GOALS CRUD
+    boolean createGoal(Goal goal);
+    List<Goal> getAllGoals();
+    Goal getGoalById(String id);
+    List<Goal> getActiveGoals();
+    List<Goal> getCompletedGoals();
+    boolean updateGoal(Goal goal);
+    boolean deleteGoal(String id);
+    int getTotalGoals();
 }

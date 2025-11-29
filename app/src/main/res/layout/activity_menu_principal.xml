@@ -69,4 +69,15 @@
         android:drawableLeft="@android:drawable/ic_menu_sort_by_size"
         android:drawablePadding="8dp"/>
 
+    <Button
+        android:id="@+id/btnGoals"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="🎯 MY GOALS"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#9C27B0"
+        android:drawableLeft="@android:drawable/star_on"
+        android:drawablePadding="8dp"/>
+
 </LinearLayout>

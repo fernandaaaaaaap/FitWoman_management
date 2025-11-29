@@ -14,6 +14,7 @@ public class MenuPrincipalActivity extends AppCompatActivity {
     private Button btnMisEntrenamientos;
     private Button btnFotosProgreso;
     private Button btnEstadisticas;
+    private Button btnGoals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,8 @@ public class MenuPrincipalActivity extends AppCompatActivity {
 
         initializeViews();
         setupListeners();
+        // Button
+        btnGoals = findViewById(R.id.btnGoals);
     }
 
     private void initializeViews() {
@@ -37,6 +40,15 @@ public class MenuPrincipalActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MenuPrincipalActivity.this, ListaEntrenamientoActivity.class);
                 startActivity(intent);
+
+                // Button: Goals
+                btnGoals.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MenuPrincipalActivity.this, GoalsActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
