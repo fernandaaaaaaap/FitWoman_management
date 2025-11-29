@@ -6,16 +6,19 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import utn.ac.cr.fitwoman_management.Entities.Goal;
 
 public class MemoryDataManager implements IDataManager {
 
     private static MemoryDataManager instance;
     private List<Entrenamiento> entrenamientos;
     private List<FotoProgreso> fotosProgreso;
+    private List<Goal> goals;
 
     private MemoryDataManager() {
         this.entrenamientos = new ArrayList<>();
         this.fotosProgreso = new ArrayList<>();
+        this.goals = new ArrayList<>();
     }
 
     public static MemoryDataManager getInstance() {
@@ -190,5 +193,76 @@ public class MemoryDataManager implements IDataManager {
     @Override
     public int getTotalFotosProgreso() {
         return fotosProgreso.size();
+    }
+    // ==================== GOALS CRUD ====================
+
+    @Override
+    public boolean createGoal(Goal goal) {
+        if (goal == null || goal.getId() == null) {
+            return false;
+        }
+        return goals.add(goal);
+    }
+
+    @Override
+    public List<Goal> getAllGoals() {
+        return new ArrayList<>(goals);
+    }
+
+    @Override
+    public Goal getGoalById(String id) {
+        for (Goal g : goals) {
+            if (g.getId().equals(id)) {
+                return g;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public List<Goal> getActiveGoals() {
+        List<Goal> activeGoals = new ArrayList<>();
+        for (Goal g : goals) {
+            if (!g.isCompleted()) {
+                activeGoals.add(g);
+            }
+        }
+        return activeGoals;
+    }
+
+    @Override
+    public List<Goal> getCompletedGoals() {
+        List<Goal> completedGoals = new ArrayList<>();
+        for (Goal g : goals) {
+            if (g.isCompleted()) {
+                completedGoals.add(g);
+            }
+        }
+        return completedGoals;
+    }
+
+    @Override
+    public boolean updateGoal(Goal goal) {
+        if (goal == null || goal.getId() == null) {
+            return false;
+        }
+
+        for (int i = 0; i < goals.size(); i++) {
+            if (goals.get(i).getId().equals(goal.getId())) {
+                goals.set(i, goal);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean deleteGoal(String id) {
+        return goals.removeIf(g -> g.getId().equals(id));
+    }
+
+    @Override
+    public int getTotalGoals() {
+        return goals.size();
     }
 }

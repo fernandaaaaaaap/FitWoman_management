@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Camera and Storage Permissions -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,17 +19,52 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitWomanManagement">
+
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.FitWomanManagement">
+            android:name=".MenuPrincipalActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- Workout Activities -->
+        <activity
+            android:name=".ListaEntrenamientoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".crearEntrenamientoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editarEntrenamiento"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleEntrenamientoActivity"
+            android:exported="false" /> <!-- Photo Activities -->
+        <activity
+            android:name=".fotosProgreso"
+            android:exported="false" />
+        <activity
+            android:name=".TomarFotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComparadorFotosActivity"
+            android:exported="false" /> <!-- Main Activity (optional) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Estadisticas_Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GoalsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".CreateGoalActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>
