@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nombre de la app -->
+    <string name="FitWoman">FitWoman</string>
+    <string name="app_subtitle">Tu compañera fitness</string>
+    <string name="app_logo">App Logo</string>
+
+    <!-- Menú Principal -->
+    <string name="btn_mis_entrenamientos">🏋️ MIS ENTRENAMIENTOS</string>
+    <string name="btn_fotos_progreso">📸 FOTOS DE PROGRESO</string>
+    <string name="btn_estadisticas">📊 MIS ESTADÍSTICAS</string>
+
+    <!-- Lista Entrenamientos -->
+    <string name="titulo_mis_entrenamientos">Mis Entrenamientos</string>
+    <string name="hint_buscar">🔍 Buscar entrenamiento...</string>
+    <string name="msg_no_entrenamientos">No hay entrenamientos registrados.\n¡Agrega tu primer entrenamiento!</string>
+    <string name="btn_agregar_entrenamiento">Agregar entrenamiento</string>
+
+    <!-- Crear Entrenamiento -->
+    <string name="titulo_nuevo_entrenamiento">Nuevo Entrenamiento</string>
+    <string name="subtitulo_nuevo_entrenamiento">Registra tu rutina del día</string>
+    <string name="label_nombre">Nombre del Entrenamiento</string>
+    <string name="hint_nombre">Ej: Rutina de piernas</string>
+    <string name="label_categoria">Categoría</string>
+    <string name="label_grupo_muscular">Grupo Muscular</string>
+    <string name="hint_grupo_muscular">Ej: Glúteos y femoral</string>
+    <string name="label_duracion">Duración (minutos)</string>
+    <string name="hint_duracion">Ej: 45</string>
+    <string name="label_descripcion">Descripción</string>
+    <string name="hint_descripcion">Describe los ejercicios realizados</string>
+    <string name="label_notas">Notas adicionales</string>
+    <string name="hint_notas">Sensaciones, logros, observaciones...</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_guardar_rutina">💪 Guardar Rutina</string>
+
+    <!-- Categorías de entrenamientos -->
+    <string-array name="categorias_entrenamientos">
+        <item>Selecciona una categoría</item>
+        <item>Piernas</item>
+        <item>Glúteos</item>
+        <item>Brazos</item>
+        <item>Espalda</item>
+        <item>Pecho</item>
+        <item>Abdomen</item>
+        <item>Cardio</item>
+        <item>Fullbody</item>
+    </string-array>
+
+    <!-- Detalle Entrenamiento -->
+    <string name="label_duracion_detalle">Duración:</string>
+    <string name="label_fecha_detalle">Fecha:</string>
+    <string name="label_grupo_muscular_detalle">Grupo muscular:</string>
+    <string name="label_descripcion_detalle">📋 Descripción</string>
+    <string name="label_notas_detalle">📝 Notas</string>
+    <string name="btn_editar">✏️ Editar</string>
+    <string name="btn_eliminar">🗑️ Eliminar</string>
+
+    <!-- Editar Entrenamiento -->
+    <string name="titulo_editar_entrenamiento">Editar Entrenamiento</string>
+    <string name="subtitulo_editar_entrenamiento">Modifica los datos de tu rutina</string>
+    <string name="btn_guardar_cambios">💾 Guardar Cambios</string>
+    <!-- Fotos de Progreso -->
+    <string name="titulo_fotos_progreso">Fotos de Progreso</string>
+    <string name="subtitulo_fotos_progreso">📊 Tu transformación mes a mes</string>
+    <string name="msg_no_fotos">No hay fotos registradas.\n¡Agrega tu primera foto de progreso!</string>
+    <string name="btn_comparar_fotos">🔄 Comparar Fotos</string>
+    <string name="btn_agregar_foto">Agregar foto</string>
+    <string name="desc_foto_progreso">Foto de progreso</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <!-- Tomar Foto -->
+    <string name="titulo_nueva_foto">Nueva Foto de Progreso</string>
+    <string name="subtitulo_nueva_foto">📸 Captura tu transformación</string>
+    <string name="desc_preview_foto">Vista previa de la foto</string>
+    <string name="msg_sin_foto">Selecciona o toma una foto</string>
+    <string name="btn_tomar_foto">📷 Tomar Foto</string>
+    <string name="btn_galeria">🖼️ Galería</string>
+    <string name="label_mes">Mes</string>
+    <string name="hint_mes">Ej: Octubre 2024</string>
+    <string name="label_peso">Peso Actual</string>
+    <string name="hint_peso">Ej: 65</string>
+    <string name="label_categoria_foto">Ángulo de la Foto</string>
+    <string name="hint_notas_foto">¿Cómo te sientes? ¿Qué logros has tenido?</string>
+    <string name="btn_guardar_foto">💾 Guardar Foto</string>
+
+    <!-- Categorías de fotos -->
+    <string-array name="categorias_fotos">
+        <item>Selecciona un ángulo</item>
+        <item>Frontal</item>
+        <item>Lateral</item>
+        <item>Espalda</item>
+        <item>Detalle</item>
+    </string-array>
+    <string name="titulo_comparador">Comparar Progreso</string>
+    <string name="subtitulo_comparador">Antes y Después</string>
+    <!-- Strings adicionales necesarios -->
+    <string name="app_name">FitWoman</string>
+    <string name="desc_foto_antes">Foto de antes</string>
+    <string name="desc_foto_despues">Foto de después</string>
+    <string name="label_antes">ANTES</string>
+    <string name="label_despues">DESPUÉS</string>
+    <string name="btn_seleccionar_fotos">Seleccionar Fotos para Comparar</string>
+    <string name="msg_progreso">mensaje motivador de progreso</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8B4789"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯 MY GOALS"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track your fitness objectives"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Tabs for Active/Completed -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnActiveGoals"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Active"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8B4789"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnCompletedGoals"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Completed"
+            android:backgroundTint="#CCCCCC"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <!-- Goals List -->
+    <ListView
+        android:id="@+id/lvGoals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp"/>
+
+    <!-- Empty State -->
+    <LinearLayout
+        android:id="@+id/layoutNoGoals"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎯"
+            android:textSize="64sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No goals yet"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start setting your fitness goals!"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Add Goal Button -->
+    <Button
+        android:id="@+id/btnAddGoal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="+ ADD NEW GOAL"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#8B4789"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>
