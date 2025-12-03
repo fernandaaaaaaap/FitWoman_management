@@ -70,4 +70,3 @@ JSON:
 ## Notas
 - Cambiar `595162df` por el ID real del entrenamiento
 - Para POST y PUT usar Body → raw → JSON en Postman
-
