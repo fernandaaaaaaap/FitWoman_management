@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#8B4789"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@String/titulo_mis_entrenamientos"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <!-- Barra de búsqueda -->
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@String/hint_buscar"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:drawablePadding="8dp"/>
+    </LinearLayout>
+
+    <!-- Lista de entrenamientos -->
+    <ListView
+        android:id="@+id/lvEntrenamientos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerLayout"
+        android:layout_above="@id/fabAgregarEntrenamiento"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp"
+        android:padding="8dp"/>
+
+    <!-- Mensaje cuando no hay entrenamientos -->
+    <TextView
+        android:id="@+id/tvNoEntrenamientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@String/msg_no_entrenamientos"
+        android:textSize="16sp"
+        android:textColor="#999999"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <!-- Botón para agregar -->
+    <Button
+        android:id="@+id/fabAgregarEntrenamiento"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="+"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E91E63"
+        android:contentDescription="@string/btn_agregar_entrenamiento"/>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerFotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#8B4789"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@String/titulo_fotos_progreso"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitulo_fotos_progreso"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <!-- Grid de fotos -->
+    <GridView
+        android:id="@+id/gridViewFotos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headerFotos"
+        android:layout_above="@id/btnComparar"
+        android:numColumns="2"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"/>
+
+    <!-- Mensaje cuando no hay fotos -->
+    <LinearLayout
+        android:id="@+id/layoutNoFotos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📸"
+            android:textSize="64sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_no_fotos"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:textAlignment="center"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Botón comparar -->
+    <Button
+        android:id="@+id/btnComparar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_comparar_fotos"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#C2528B"/>
+
+    <!-- Botón flotante agregar foto -->
+    <Button
+        android:id="@+id/fabAgregarFoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="+"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E91E63"
+        android:contentDescription="@string/btn_agregar_foto"/>
+
+</RelativeLayout>
