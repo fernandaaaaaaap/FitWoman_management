@@ -1,6 +1,8 @@
 Documentación API - Entrenamientos API para gestionar entrenamientos y fotos.
+usuario del cliente: fitwoman
+contraseña:1234 ( es para la prueba de la app que se ocupa eso para el incio de sesion) 
 
-Servidor El servidor corre en: http://localhost:3000 y la url de Render es: https://fitwoman-api.onrender.com
+Servidor El servidor corre en: http://localhost:3000 y la url del API en la nube conn render: https://fitwoman-api.onrender.com
 
 1)Create entrenamiento metodo POST URL:http://localhost:3000/api/entrenamientos JSON: { "nombre": "Leg Day", "categoria": "Strength", "descripcion": "Complete leg workout", "duracionMinutos": 45, "grupoMuscular": "Legs", "notas": "Focus on glutes" }
 
